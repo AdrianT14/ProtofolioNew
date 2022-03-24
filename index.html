@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trifan`s Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div1 class="container nav-container">
+        <a href="index.html"
+          ><img class="logo" src="assets/logo.png" alt="logo"
+        /></a>
+        <ul class="nav-menu">
+          <a href=""><li>Home</li> </a>
+          <a href=""><li>About me</li> </a>
+          <a href=""><li>Projects</li> </a>
+          <a href=""><li>Contact</li></a>
+        </ul>
+        <button id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+      </div1>
+    </nav>
+
+    <header>
+      <div class="container header-container">
+        <div class="header-left">
+          <h1>Adrian Trifan</h1>
+          <h3>Self-Tought <span class="text"></span></h3>
+        </div>
+        <div class="header-right">
+          <button class="btn primary-btn">View CV</button>
+          <button class="btn secondary-btn">Download CV</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="container about-container">
+        <div class="about-left">
+          <h1>About me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            quisquam excepturi aliquid sit obcaecati neque nesciunt amet veniam.
+            Quia necessitatibus at enim minus maiores consectetur et commodi
+            minima quo fuga!
+          </p>
+        </div>
+        <div class="about-right">
+          <article class="skill">
+            <span class="about-icon skill1"
+              ><i class="fa-brands fa-html5"></i
+            ></span>
+            <h5>HTML</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+          <article class="skill">
+            <span class="about-icon skill2"
+              ><i class="fa-brands fa-css3-alt"></i
+            ></span>
+            <h5>CSS</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+          <article class="skill">
+            <span class="about-icon skill3"
+              ><i class="fa-brands fa-js"></i
+            ></span>
+            <h5>JavaScript</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+          <article class="skill">
+            <span class="about-icon skill4"
+              ><i class="fa-brands fa-react"></i
+            ></span>
+            <h5>React</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+          <article class="skill">
+            <span class="about-icon skill5"
+              ><i class="fa-brands fa-bootstrap"></i
+            ></span>
+            <h5>Bootstrap</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+          <article class="skill">
+            <span class="about-icon skill6"
+              ><i class="fa-brands fa-git-alt"></i
+            ></span>
+            <h5>Git</h5>
+            <p>
+              lorem lorem lorem lorem lorem lorem Lorem ipsum dolor sit, amet
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+      let typed = new Typed(".text", {
+        strings: ["Web Developer", "Programmer"],
+        loop: true,
+        typeSpeed: 150,
+      });
+    </script>
+  </body>
+</html>

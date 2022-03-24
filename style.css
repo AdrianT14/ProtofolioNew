@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-bg-dark: #1f2641;
+  --color-bg-light: #31366d;
+  --color-bg-mid: #191d46;
+  --color-btn: #9053ca;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  line-height: 1.7;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+a {
+  color: white;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+
+/************************* NAVBAR *****************/
+
+.logo {
+  height: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+nav button {
+  display: none;
+}
+/* will change on scroll with javascript */
+.window-scroll {
+  background: var(--color-bg-light);
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-menu a {
+  font-size: 1rem;
+}
+
+.nav-menu a:hover {
+  color: var(--color-bg-light);
+}
+
+header {
+  margin-top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-left h3 span {
+  color: #9053ca;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 40%;
+  background: var(--color-btn);
+  border-radius: 25px;
+  box-shadow: 0rem 0rem 1rem var(--color-bg-mid);
+}
+
+.primary-btn {
+  background: transparent;
+  border: 1px solid var(--color-btn);
+}
+
+.primary-btn:hover {
+  background: var(--color-btn);
+  box-shadow: 0rem 0rem 3rem var(--color-btn);
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: transparent;
+  border: 1px solid var(--color-btn);
+  box-shadow: 0rem 0rem 3rem var(--color-btn);
+  cursor: pointer;
+}
+
+/************ ABOUT  *************/
+
+.about {
+  background: var(--color-bg-mid);
+  height: 30rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+}
+
+.about-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skill {
+  background: var(--color-bg-light);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.skill:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+skill:nth-child(2).about-icon {
+  background: blue;
+}
+
+.about-icon {
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.skill h5 {
+  margin: 2rem 0 1rem;
+}
+
+.skill p {
+  font-size: 0.8rem;
+}
+
+.skill1 {
+  background: orange;
+}
+.skill2 {
+  background: blue;
+}
+.skill3 {
+  background: yellow;
+  color: black;
+}
+.skill4 {
+  background: darkgrey;
+  color: aquamarine;
+}
+.skill5 {
+  background: purple;
+}
+.skill6 {
+  background: rgb(119, 80, 8);
+}
