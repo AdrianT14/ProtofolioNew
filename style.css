@@ -163,6 +163,11 @@ header {
   height: 30rem;
 }
 
+.about-left span > a {
+  color: #9053ca;
+  font-size: 1.3rem;
+}
+
 .about-container {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -517,6 +522,11 @@ footer {
   }
 
   /* ABOUT */
+  .about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .about-right {
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
