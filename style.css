@@ -7,6 +7,7 @@
   outline: 0;
   text-decoration: none;
   list-style: none;
+  user-select: none;
 }
 
 :root {
@@ -49,10 +50,10 @@ section {
   font-weight: 500;
 }
 
-/************************* NAVBAR *****************/
+/************************* HEADER *****************/
 
 .logo {
-  height: 50px;
+  height: 40px;
 }
 
 .container {
@@ -134,6 +135,7 @@ header {
   background: var(--color-btn);
   border-radius: 25px;
   box-shadow: 0rem 0rem 1rem var(--color-bg-mid);
+  font-weight: 700;
 }
 
 .primary-btn {
@@ -219,4 +221,168 @@ skill:nth-child(2).about-icon {
 }
 .skill6 {
   background: rgb(119, 80, 8);
+}
+
+/************** PROJECTS ***************/
+.projects {
+  margin-top: 5rem;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.projects-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project-image img {
+  width: 350px;
+  padding-top: 2rem;
+  padding-left: 2.7rem;
+}
+
+.project {
+  width: 400px;
+  background-color: var(--color-bg-light);
+  border-radius: 2rem;
+}
+
+.project:hover {
+  background-color: var(--color-bg-mid);
+}
+
+.project-info {
+  text-align: center;
+  padding: 2rem;
+}
+
+.project-info h4,
+.project-info p,
+.project-info a {
+  margin-bottom: 2rem;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+}
+
+.project-info a {
+  padding: 1rem 2rem;
+  background-color: var(--color-btn);
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.project-info a:hover {
+  box-shadow: 0rem 0rem 3rem var(--color-btn);
+  cursor: pointer;
+}
+
+/************ CONTACT *************/
+.contact-container {
+  background-color: var(--color-bg-mid);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 2rem;
+  height: 25rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+
+.contact-info {
+  background-color: var(--color-bg-light);
+  padding: 5rem;
+  border-radius: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 9rem;
+}
+
+.contact-info h2 {
+  text-align: center;
+}
+
+.contact-icon {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.contacts li {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.socials a > i:hover {
+  transform: scale(1.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.name input {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-bg-dark);
+}
+
+form button {
+  width: 15%;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--color-btn);
+  color: white;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  height: 5rem;
+  background-color: #191d46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************** RESPONSIVNESS!  ******************/
+@media screen and (max-width: 1024px) {
+  nav button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #close-menu {
+    display: none;
+  }
 }
