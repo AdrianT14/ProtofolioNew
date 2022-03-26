@@ -20,22 +20,28 @@
   <body>
     <!-- HEADER -->
     <nav>
-      <div1 class="container nav-container">
+      <div class="container nav-container">
         <a href="index.html"
           ><img class="logo" src="assets/logo.png" alt="logo"
         /></a>
         <ul class="nav-menu">
-          <a href=""><li>Home</li> </a>
-          <a href=""><li>About me</li> </a>
-          <a href=""><li>Projects</li> </a>
-          <a href=""><li>Contact</li></a>
+          <li class="menu-link"><a class="menu-link" href="#home">Home</a></li>
+          <li class="menu-link">
+            <a class="menu-link" href="#about">About me</a>
+          </li>
+          <li class="menu-link">
+            <a class="menu-link" href="#projects">Projects</a>
+          </li>
+          <li class="menu-link">
+            <a class="menu-link" href="#contact">Contact</a>
+          </li>
         </ul>
         <button id="open-menu"><i class="fa-solid fa-bars"></i></button>
         <button id="close-menu"><i class="fa-solid fa-xmark"></i></button>
-      </div1>
+      </div>
     </nav>
 
-    <header>
+    <header id="home">
       <div class="container header-container">
         <div class="header-left">
           <h1>Adrian Trifan</h1>
@@ -48,7 +54,7 @@
       </div>
     </header>
     <!-- ABOUT SECTION -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container about-container">
         <div class="about-left">
           <h1>About me</h1>
@@ -120,7 +126,7 @@
 
     <!-- PROJECTS -->
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>My Projects</h2>
       <div class="container projects-container">
         <div class="project">
@@ -205,7 +211,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container contact-container">
         <div class="contact-info">
           <h2>Contact Me</h2>
